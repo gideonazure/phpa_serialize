@@ -1,5 +1,5 @@
 {
-  "name": "phpa/class_serializer",
+  "name": "gideonazure/class_serializer",
   "description": "This is a project for class serialization",
   "keywords": ["project", "classes", "serialize"],
   "type": "library",
