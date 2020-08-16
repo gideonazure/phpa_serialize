@@ -1,7 +1,7 @@
 <?php
 
 
-class SerializeTest
+class TestClass
 {
     public $project;
     public $goals;

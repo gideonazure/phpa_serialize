@@ -3,9 +3,9 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../src/SerializeClass.php';
-require_once __DIR__ . '/../src/SerializeTest.php';
+require_once __DIR__ . '/TestClass.php';
 
-$tester = new SerializeTest(
+$tester = new TestClass(
         'PHPA. Class serializer',
         'Create library for class serializing to JSON, YAML and JSON formats',
         'Worging library with composer instalation',
