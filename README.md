@@ -17,34 +17,45 @@ composer require gideonazure/class_serializer
 ## Usage
 
 ```php
-// require class to your project
-require_once __DIR__ . '/../src/SerializeClass.php';
+// require needed class to your project
+use Serialize\SerializeJson;
+use Serialize\SerializeYaml;
+use Serialize\SerializeXml;
 
 // create instance of a class
 // with specifying the format of the final data as a class property
 
-# for JSON output data
-$JSON = new SerializeClass('JSON'); 
+// for JSON output data
+$JSON = new SerializeJson(); 
 
-# for YAML output data
-$YAML = new SerializeClass('YAML'); 
+// for YAML output data
+$YAML = new SerializeYaml(); 
 
-# for XML output data
-$XML = new SerializeClass('XML'); // XML output data
+// for XML output data
+$XML = new SerializeXml();
 
 
 
 // and then call  "serialize" method of instance 
 // with passing data object
 
-# return class object in JSON format
+// return class object in JSON format
 $JSON->serilalize(/* class object */);
 
-# return class object in YAML format
+// return class object in YAML format
 $YAML->serilalize(/* class object */);
 
-# return class object in XML format
+// return class object in XML format
 $XML->serilalize(/* class object */);
+
+
+// if need catch errors and return message use try->catch construction:
+try {
+    $JSON->serilalize(/* class object */);
+} catch (\Exception $e){
+    echo $e->getMessage();
+}
+
 ```
 
 ## Demo
