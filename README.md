@@ -7,7 +7,7 @@ This project based on a default structure for PHP projects and help to serialize
 
 ## Installation
 
-Use the composer [package](https://pip.pypa.io/en/stable/) to install class serializer.
+Use the composer [package](https://packagist.org/packages/gideonazure/class_serializer) to install class serializer.
 
 ```bash
 composer require phpa/class_serializer
