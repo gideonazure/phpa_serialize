@@ -1,8 +1,0 @@
-project: 'PHPA. Class serializer'
-goals: 'Create library for class serializing to JSON, YAML and JSON formats'
-result: 'Worging library with composer instalation'
-stack:
-    - PHP
-    - GIT
-    - OOP
-    - COMPOSER
